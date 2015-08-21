@@ -1,5 +1,8 @@
-== README
-
+[![Build Status](https://travis-ci.org/calvcoll/OpenShindan.svg)](https://travis-ci.org/calvcoll/OpenShindan)
+# Open Shindan
+The open alternative to ShindanMaker
+## TODO
+### README
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
