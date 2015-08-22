@@ -1,11 +1,13 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title OpenShindan - Question
+    %title OpenShindan - Shindan
   %body
     %h1 New Question
-    = form_for @question, :url => {:controller => 'questions', :action => 'index'} do |form|
+    = form_for @shindan, :url => {:controller => 'shindans', :action => 'index'} do |form|
       = form.label :title
       = form.text_field :title
+      %br
+      = render :partial => 'answers', :locals => {:form => form}
       %br
       = form.submit "Create Question"
