@@ -1,0 +1,7 @@
+%div{class:'answer'}
+  = fields_for_answer answer do |answer_form|
+  %p
+    Answer = answer_form.text_field :name
+    = link_to "remove", "javascript:void(0);", id="remove_answer"
+  = @answer = answer
+  = error_messages_for :answer
